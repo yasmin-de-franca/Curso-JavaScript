@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prmeiros passos com DOM</title>
+    <style>
+        body {
+            background: #69b690;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <!--DOM = Document Objetc Model = Conjunto de objetos para dar acesso ao componentes internos do site-->
+    <!--Árvore DoM:
+        window
+    location document history (exempos)
+                html
+             head  body
+        meta title  h1 p script div -->
+        <!--Selecionando: por marca, ID, nome, classe e seletor-->
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Cique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText)
+
+        var d = window.document.querySelector('div#msg')
+    </script>
+</body>
+</html>
